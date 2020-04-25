@@ -1,0 +1,29 @@
+plugins {
+    id 'scala'
+//    id 'com.github.maiflai.scalatest'
+    id "com.commercehub.gradle.plugin.avro-base" version "0.9.1"
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven { url "https://packages.confluent.io/maven/" }
+}
+
+dependencies {
+    implementation(
+        'org.scala-lang:scala-library:2.12.11',
+        'org.apache.kafka:kafka-streams:5.5.0-ccs',
+        'org.apache.kafka:kafka-clients:5.5.0-ccs',
+        'org.apache.kafka:kafka-streams-scala_2.12:5.5.0-ccs',
+        'io.confluent:kafka-avro-serializer:5.5.0',
+        'io.confluent:kafka-streams-avro-serde:5.5.0',
+        'org.apache.avro:avro:1.8.2',
+
+        'io.github.moleike:kafka-streams-avro-scala_2.12:0.2.5'
+    )
+
+    testImplementation 'org.scalatest:scalatest_2.11:3.0.0'
+}
