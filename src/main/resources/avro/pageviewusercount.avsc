@@ -1,0 +1,10 @@
+{"namespace": "io.confluent.examples.streams.avro",
+ "type": "record",
+ "name": "PageViewUserCount",
+ "fields": [
+     {"name": "gender", "type": "string"},
+     {"name": "pageid", "type": "string"},
+     {"name": "totalviewtime", "type": "long"},
+     {"name": "usercount", "type": "int"}
+ ]
+}

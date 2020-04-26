@@ -1,6 +1,6 @@
 {"namespace": "io.confluent.examples.streams.avro",
  "type": "record",
- "name": "PageViewWithGender",
+ "name": "PageViewGender",
  "fields": [
      {"name": "userid", "type": "string"},
      {"name": "pageid", "type": "string"},
