@@ -11,6 +11,6 @@ Code walkthrough:
 `./gradlew run`
 
 ### Things I would've done If I had more time:
-- Use SpecificAvro instread of GenericAvro for serde - The reason I couldn't do is that I couldn't get the gradle plugin for generatic objects from avro schema to work properly and I had spent too much time on that.
-- Right unit and integration tests - As you probably know, testing streaming applications is inherently hard. Also I'm new to kafka streams so it was a bit of a learning curve and I needed more time to figure out how to tests my application.
-- Write the app with scala - Although I prefer scala as it much more functional and concise, most of th tutorials and examples were in Java so I took a pragmatic approach and used the default DSL in Java. 
+- Use SpecificAvro instread of GenericAvro for serde - The reason I couldn't do that is becauae I couldn't get the gradle plugin for creating POJOs from avro schemas to work properly and I had spent too much time on that.
+- Write unit and integration tests - As you probably know, testing streaming applications is inherently hard. Also, I'm new to kafka streams so it was a bit of a learning curve and I needed more time to figure out how to test the app.
+- Write the app in scala - Although I prefer scala as it much more functional and concise, most of th tutorials and examples were in Java so I took a pragmatic approach and used the default Java DSL. 
